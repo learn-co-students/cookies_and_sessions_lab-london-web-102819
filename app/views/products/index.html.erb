@@ -6,7 +6,8 @@
 </ul>
 
 <h1>Our Products for You</h1> 
-<%=form_tag ({controller: "products", action:"add", method:"post"}) do %>
+<!-- below: add_to_cart_path == ({controller: "products", action:"add", method:"post"})-->
+<%=form_tag (add_to_cart_path) do %>
     <label>Product:</label><br>
     <input type="text"  name="product"><br>
 
